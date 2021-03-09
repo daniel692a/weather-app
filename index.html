@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conoce el clima alrededor del mundo">
+    <meta name="robots" content="index,follow">
+    <title>Weather</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="./assets/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">
+            World Forecast
+        </h1>
+    </header>
+    <main class="content">
+        <form class="content-form">
+            <label for="city-name" class="content-form__label">
+                <span>City Name:</span>
+                <input type="text" placeholder="City" autocomplete="country-name" required id="city-name" class="content-form__input">
+            </label>
+            <input type="submit" value="Search" class="content-form__submit">
+        </form>
+        <section id="mount"></section>
+    </main>
+    <footer class="footer">
+        <h2 class="footer-title"><a href="https://github.com/daniel692a/weather-app" target="_blank" class="footer_ancore">View on GitHub</a></h2>
+    </footer>
+    <script type="text/javascript" src="./js/index.js"></script>
+</body>
+</html>
