@@ -18,12 +18,12 @@
         </h1>
     </header>
     <main class="content">
-        <form class="content-form">
+        <form class="content-form" onsubmit="return false">
             <label for="city-name" class="content-form__label">
                 <span>City Name:</span>
-                <input type="text" placeholder="City" autocomplete="country-name" required id="city-name" class="content-form__input">
+                <input type="text" placeholder="City" autocomplete="country-name" required id="cityname" class="content-form__input">
             </label>
-            <input type="submit" value="Search" class="content-form__submit">
+            <input type="submit" value="Search" class="content-form__submit" id='search'>
         </form>
         <section id="mount"></section>
     </main>
