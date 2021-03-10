@@ -29,13 +29,13 @@ const fetchWeather = async() => {
         const forecast = data.weather[0].description;
         icon.alt = forecast;
         if(forecast === 'cielo claro'){
-            icon.src = './../assets/soleado.svg';
+            icon.src = './js/assets/soleado.svg';
         } else if (forecast === 'muy nuboso'){
-            icon.src = './../assets/dia-nublado.svg';
+            icon.src = './js/assets/dia-nublado.svg';
         } else if (forecast === 'lluvia ligera'){
-            icon.src = './../assets/lluvioso.svg';
+            icon.src = './js/assets/lluvioso.svg';
         } else {
-            icon.src = './../assets/ventoso.svg';
+            icon.src = './js/assets/ventoso.svg';
         }
         name.textContent = `${data.name} - ${data.sys.country}`;
         container.append(iconContainer, name, temperature, weather);
