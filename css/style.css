@@ -27,6 +27,7 @@ body {
 .content {
     width: 100%;
     padding: 2rem 0;
+    min-height: 80vh;
 }
 .content .content-form {
     width: 90%;
@@ -73,7 +74,7 @@ body {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    padding: 0px 30px 30px;
+    padding: 0px 20px 20px;
 }
 .footer .footer_ancore {
     font-size: 2.3rem;
@@ -104,7 +105,7 @@ body {
     border-radius: 10px;
     padding: 2rem;
     background: linear-gradient(90deg, #337a63 0%, rgb(34, 138, 105) 31%, rgb(5, 119, 81) 100%);
-    box-shadow: 0px 0px 12px 8px rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 0px 12px 7px rgba(255, 255, 255, 0.3);
 }
 .city h2 {
     text-align: center;
