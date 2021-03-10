@@ -8,7 +8,7 @@ html{
 }
 body {
     background: rgb(15, 6, 172);
-    background: linear-gradient(128deg, rgba(15, 6, 172, 1) 0%, rgba(63, 63, 191, 1) 50%, rgba(0, 179, 215, 1) 100%) no-repeat fixed;
+    background: linear-gradient(128deg, rgb(12, 9, 71) 0%, rgb(0, 0, 117) 50%, rgb(7, 61, 71) 100%) no-repeat fixed;
     font-family: 'Roboto', sans-serif;
     color: #efefef;
 }
@@ -69,8 +69,6 @@ body {
     font-weight: 600;
 }
 .footer {
-    position: relative;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -78,7 +76,7 @@ body {
     padding: 0px 30px 30px;
 }
 .footer .footer_ancore {
-    font-size: 2.4rem;
+    font-size: 2.3rem;
     color: #efefef;
     text-decoration: none;
 }
@@ -89,14 +87,31 @@ body {
 .error {
     font-size: 2rem;
     color: red;
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
     margin: 0.8rem;
 }
+.figure-img{
+    width: 60%;
+    margin: auto;
+}
+.figure-img img{
+    width: 100%;
+}
 .city {
     width: 90%;
-    height: 100px;
     margin: 0 auto 3rem;
     border-radius: 10px;
-    background: linear-gradient(45deg, rgba(107,28,125,1) 0%, rgba(134,42,147,1) 31%, rgba(178,48,191,1) 54%, rgba(187,45,196,1) 78%, rgba(212,38,217,1) 100%);
+    padding: 2rem;
+    background: linear-gradient(90deg, #337a63 0%, rgb(34, 138, 105) 31%, rgb(5, 119, 81) 100%);
+    box-shadow: 0px 0px 12px 8px rgba(255, 255, 255, 0.3);
+}
+.city h2 {
+    text-align: center;
+    font-size: 2rem;
+}
+.city p {
+    font-size: 1.6rem;
+    margin: 0.5rem;
+    text-transform:capitalize;
 }
