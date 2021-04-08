@@ -1,9 +1,17 @@
 const apiKey = `f834c1eefc42b638fc39a60f43413a96`;
 const baseUrl = `https://api.openweathermap.org/data/2.5/weather?q=`;
 const urlEnd = `&units=metric&lang=es&appid=${apiKey}`;
-
+//Nodes
 const mountNode = document.querySelector('#mount');
 const buttonFetch = document.querySelector('#search');
+
+const container = document.createElement('section');
+const name = document.createElement('h2');
+const weather = document.createElement('p');
+const temperature = document.createElement('p');
+const iconContainer = document.createElement('figure');
+const icon = document.createElement('img');
+
 const fetchWeather = async() => {
     try {
         mountNode.innerHTML="";
@@ -11,14 +19,6 @@ const fetchWeather = async() => {
         //Consume API
         const response = await fetch(`${baseUrl}${city}${urlEnd}`);
         const data = await response.json();
-
-        //Nodes
-        const container = document.createElement('div');
-        const name = document.createElement('h2');
-        const weather = document.createElement('p');
-        const temperature = document.createElement('p');
-        const iconContainer = document.createElement('figure');
-        const icon = document.createElement('img');
 
         //Nodes values and attributes
         container.className = 'city';
@@ -29,13 +29,13 @@ const fetchWeather = async() => {
         const forecast = data.weather[0].description;
         icon.alt = forecast;
         if(forecast === 'cielo claro'){
-            icon.src = './js/assets/soleado.svg';
+            icon.src = './assets/soleado.svg';
         } else if (forecast === 'muy nuboso'){
-            icon.src = './js/assets/dia-nublado.svg';
+            icon.src = './assets/dia-nublado.svg';
         } else if (forecast === 'lluvia ligera'){
-            icon.src = './js/assets/lluvioso.svg';
+            icon.src = './assets/lluvioso.svg';
         } else {
-            icon.src = './js/assets/ventoso.svg';
+            icon.src = './assets/ventoso.svg';
         }
         name.textContent = `${data.name} - ${data.sys.country}`;
         container.append(iconContainer, name, temperature, weather);

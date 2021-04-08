@@ -7,10 +7,9 @@ html{
     font-size: 62.5%;
 }
 body {
-    background: rgb(15, 6, 172);
-    background: linear-gradient(128deg, rgb(12, 9, 71) 0%, rgb(0, 0, 117) 50%, rgb(7, 61, 71) 100%) no-repeat fixed;
+    background: #F1FAEE;
     font-family: 'Roboto', sans-serif;
-    color: #efefef;
+    color: #121212;
 }
 .header{
     position: relative;
@@ -20,9 +19,9 @@ body {
 }
 .header .header-title {
     font-size: 3.5rem;
-    color: #efefef;
     text-align: center;
     font-weight: 900;
+    color: #457B9D;
 }
 .content {
     width: 100%;
@@ -39,8 +38,7 @@ body {
 }
 .content-form__label {
     font-size: 2rem;
-    width: 90%;
-    margin: 2.5rem auto;
+    margin-bottom: 2rem;
 }
 .content-form__input{
     background: none;
@@ -48,38 +46,38 @@ body {
     border-top: 0px;
     border-left: 0px;
     border-right: 0px;
-    border-bottom:  3px solid #ec6565;
-    color: #efefef;
+    border-bottom:  3px solid #E63946;
     height: 2.4rem;
     font-size: 2rem;
     width: 60%;
     padding-left: 10px;
 }
 .content-form__input::placeholder{
-    color: #efefef;
     font-size: 2rem;
     font-family: 'Roboto', sans-serif;
 }
 .content-form__submit{
-    padding: 8px 10px;
+    padding: 0.8rem 2rem;
     border-radius: 10px;
     outline: none;
-    background: #ec6565;
+    background: #E63946;
     border: none;
-    color: #efefef;
+    color: #F1FAEE;
     font-size: 2.4rem;
     font-weight: 600;
+    height: auto;
 }
 .footer {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     width: 100%;
-    padding: 0px 20px 15px;
+    height: 10vh;
 }
 .footer .footer_ancore {
-    font-size: 2.3rem;
-    color: #efefef;
+    font-size: 2.4rem;
+    color: #121212;
     text-decoration: none;
 }
 #mount {
@@ -88,8 +86,8 @@ body {
 }
 .error {
     font-size: 2rem;
-    color: red;
-    font-weight: bold;
+    color: #E63946;
+    font-weight: 600;
     text-align: center;
     margin: 0.8rem;
 }
@@ -101,12 +99,12 @@ body {
     width: 100%;
 }
 .city {
-    width: 90%;
-    margin: 0 auto 3rem;
+    width: 25rem;
+    margin: 1rem auto;
     border-radius: 10px;
+    background: #1D3557;
+    color: #F1FAEE;
     padding: 2rem;
-    background: linear-gradient(90deg, #337a63 0%, rgb(34, 138, 105) 31%, rgb(5, 119, 81) 100%);
-    box-shadow: 0px 0px 12px 7px rgba(255, 255, 255, 0.3);
 }
 .city h2 {
     text-align: center;
