@@ -36,7 +36,7 @@ body {
 }
 .content-form__label {
     font-size: 2rem;
-    margin: 2.5rem auto;
+    margin-bottom: 2rem;
 }
 .content-form__input{
     background: none;
@@ -55,7 +55,7 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 .content-form__submit{
-    padding: 8px 20px;
+    padding: 0.8rem 2rem;
     border-radius: 10px;
     outline: none;
     background: #E63946;
@@ -63,6 +63,7 @@ body {
     color: #F1FAEE;
     font-size: 2.4rem;
     font-weight: 600;
+    height: auto;
 }
 .footer {
     display: flex;
@@ -96,7 +97,7 @@ body {
     width: 100%;
 }
 .city {
-    width: 90%;
+    width: 25rem;
     margin: 1rem auto;
     border-radius: 10px;
     background: #1D3557;

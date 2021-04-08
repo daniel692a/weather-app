@@ -1,9 +1,17 @@
 const apiKey = `f834c1eefc42b638fc39a60f43413a96`;
 const baseUrl = `http://api.openweathermap.org/data/2.5/weather?q=`;
 const urlEnd = `&units=metric&lang=es&appid=${apiKey}`;
-
+//Nodes
 const mountNode = document.querySelector('#mount');
 const buttonFetch = document.querySelector('#search');
+
+const container = document.createElement('section');
+const name = document.createElement('h2');
+const weather = document.createElement('p');
+const temperature = document.createElement('p');
+const iconContainer = document.createElement('figure');
+const icon = document.createElement('img');
+
 const fetchWeather = async() => {
     try {
         mountNode.innerHTML="";
@@ -11,14 +19,6 @@ const fetchWeather = async() => {
         //Consume API
         const response = await fetch(`${baseUrl}${city}${urlEnd}`);
         const data = await response.json();
-        //Nodes
-        const container = document.createElement('div');
-        const name = document.createElement('h2');
-        const weather = document.createElement('p');
-        const temperature = document.createElement('p');
-        const iconContainer = document.createElement('figure');
-        const icon = document.createElement('img');
-
         //Nodes values and attributes
         container.className = 'city';
         iconContainer.appendChild(icon);
